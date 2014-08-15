@@ -27,3 +27,57 @@ RUN \
     make check && \
     make install
 
+## Install R 3.0.1
+RUN \
+    cd /tmp && \
+    wget http://cran.rstudio.com/src/base/R-3/R-3.0.1.tar.gz && \
+    tar -zxvf R-3.0.1.tar.gz && \
+    cd R-3.0.1 && \
+    ./configure --with-x=no --prefix=/opt/R3.0.1/ && \
+    make && \
+    make check && \
+    make install
+
+## Install R 3.0.2
+RUN \
+    cd /tmp && \
+    wget http://cran.rstudio.com/src/base/R-3/R-3.0.2.tar.gz && \
+    tar -zxvf R-3.0.2.tar.gz && \
+    cd R-3.0.2 && \
+    ./configure --with-x=no --prefix=/opt/R3.0.2/ && \
+    make && \
+    make check && \
+    make install
+
+## Install R 3.0.3
+RUN \
+    cd /tmp && \
+    wget http://cran.rstudio.com/src/base/R-3/R-3.0.3.tar.gz && \
+    tar -zxvf R-3.0.3.tar.gz && \
+    cd R-3.0.3 && \
+    ./configure --with-x=no --prefix=/opt/R3.0.3/ && \
+    make && \
+    make check && \
+    make install
+
+## Install R 3.1.0
+RUN \
+    cd /tmp && \
+    wget http://cran.rstudio.com/src/base/R-3/R-3.1.0.tar.gz && \
+    tar -zxvf R-3.1.0.tar.gz && \
+    cd R-3.1.0 && \
+    ./configure --with-x=no --prefix=/opt/R3.1.0/ && \
+    make && \
+    make check && \
+    make install
+
+## Install R 3.1.1
+RUN \
+    cd /tmp && \
+    wget http://cran.rstudio.com/src/base/R-3/R-3.1.1.tar.gz && \
+    tar -zxvf R-3.1.1.tar.gz && \
+    cd R-3.1.1 && \
+    ./configure --with-x=no --prefix=/opt/R3.1.1/ && \
+    make && \
+    make check && \
+    make install
