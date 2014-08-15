@@ -25,5 +25,5 @@ RUN \
     ./configure --with-x=no --prefix=/opt/R3.0.0/ && \
     make && \
     make check && \
-    make install && \
+    make install
 
