@@ -13,3 +13,37 @@ ln -s /opt/R3.1.1/bin/Rscript /usr/bin/Rscript
 ```
 
 Tagged images as specific versions, already have this done.
+
+The LANG is set to use UTF-8 encoding so its internationally friendly.
+
+The following package list is installed to support commonly used R packages that require system layer support.
+ * sudo
+ * lsb-release
+ * libatlas3gf-base
+ * texinfo
+ * texlive
+ * texlive-fonts-extra
+ * texlive-latex-extra
+ * biblatex
+ * texlive-bibtex-extra
+ * texlive-xetex
+ * libxml2-dev
+ * protobuf-compiler
+ * libprotoc-dev
+ * libmysqlclient15-dev
+ * unixodbc
+ * unixodbc-dev
+ * libmyodbc
+ * odbc-postgresql
+ * tdsodbc
+ * libgraphviz-dev
+ * libproj-dev
+ * libfftw3-dev
+ * libnetcdf-dev
+ * libproc-dev
+ * libgdal1-dev
+ * libcairo2
+ * libcairo2-dev
+ * libxt6
+ * libxt-dev
+ * jags
