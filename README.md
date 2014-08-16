@@ -8,8 +8,8 @@ All versions of R are compiled from source and placed in the `/opt` directory. I
 If you use the `latest` tag, no versions of R are configured to be in your `PATH`. To configure a specific version of to be used, link the executables to `/usr/bin`. Here is an example for R 3.1.1
 
 ```bash
-ln -s /usr/bin/R /opt/R3.1.1/bin/R
-ln -s /usr/bin/Rscript /opt/R3.1.1/bin/Rscript
+ln -s /opt/R3.1.1/bin/R /usr/bin/R
+ln -s /opt/R3.1.1/bin/Rscript /usr/bin/Rscript
 ```
 
 Tagged images as specific versions, already have this done.
