@@ -81,3 +81,6 @@ RUN \
     make && \
     make check && \
     make install
+
+## Cleanup
+RUN rm -rf /tmp/R3*
