@@ -1,7 +1,7 @@
 docker-R3.X
 ===========
 
-Ubuntu 12.04 image with [R](http://www.r-project.org/) 3.X preinstalled. Individually tagged versions of [this image](https://registry.hub.docker.com/u/cbarraford/r3x/) are built with a specific version of R enabled.
+Ubuntu 12.04 image with [R](http://www.r-project.org/) 3.X preinstalled. Individually tagged versions of [this image](https://registry.hub.docker.com/u/cbarraford/r3x/) are built with a specific version of R installed.
 
 If you use the `latest` tag, you'll have the latest version of R which currently is 3.1.1.
 
