@@ -17,7 +17,7 @@ RUN apt-get -y --force-yes install wget build-essential fortran77-compiler gfort
 RUN apt-get -y --force-yes --no-install-recommends install openjdk-7-jdk
 
 # Install add-on packages
-RUN apt-get -y --force-yes install sudo lsb-release libatlas3gf-base texinfo texlive texlive-fonts-extra texlive-latex-extra biblatex texlive-bibtex-extra texlive-xetex libxml2-dev protobuf-compiler libprotoc-dev libmysqlclient15-dev unixodbc unixodbc-dev libmyodbc odbc-postgresql tdsodbc libgraphviz-dev libproj-dev libfftw3-dev libnetcdf-dev libproc-dev libgdal1-dev libcairo2 libcairo2-dev libxt6 libxt-dev jags
+RUN apt-get -y --force-yes install sudo lsb-release curl wget libatlas3gf-base texinfo texlive texlive-fonts-extra texlive-latex-extra biblatex texlive-bibtex-extra texlive-xetex libxml2-dev protobuf-compiler libprotoc-dev libmysqlclient15-dev unixodbc unixodbc-dev libmyodbc odbc-postgresql tdsodbc libgraphviz-dev libproj-dev libfftw3-dev libnetcdf-dev libproc-dev libgdal1-dev libcairo2 libcairo2-dev libxt6 libxt-dev jags
 
 # Set default locale
 RUN update-locale --reset LANG=C.UTF-8

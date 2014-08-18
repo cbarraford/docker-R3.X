@@ -11,6 +11,8 @@ The following package list is installed to support commonly used R packages that
 
  * sudo
  * lsb-release
+ * curl
+ * wget
  * libatlas3gf-base
  * texinfo
  * texlive
