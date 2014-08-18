@@ -8,6 +8,7 @@ If you use the `latest` tag, you'll have the latest version of R which currently
 The LANG is set to use UTF-8 encoding so its internationally friendly.
 
 The following package list is installed to support commonly used R packages that have system layer dependencies.
+
  * sudo
  * lsb-release
  * libatlas3gf-base
