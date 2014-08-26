@@ -9,7 +9,7 @@ RUN \
     wget http://cran.rstudio.com/src/base/R-3/R-$R_VERSION.tar.gz && \
     tar -zxvf R-$R_VERSION.tar.gz && \
     cd R-$R_VERSION && \
-    ./configure --with-x=no --prefix=/opt/R$R_VERSION/ && \
+    ./configure --with-x=no --prefix=/opt/R$R_VERSION/ --enable-R-shlib && \
     make && \
     make check && \
     make install
