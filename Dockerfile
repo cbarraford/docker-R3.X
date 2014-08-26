@@ -13,7 +13,6 @@ RUN echo "deb http://cran.rstudio.com/bin/linux/ubuntu precise/" >> /etc/apt/sou
 # Update apt
 RUN apt-get -y -qq update
 
-RUN apt-get -y --force-yes install wget build-essential fortran77-compiler gfortran gfortran-4.6 libgfortran3 libreadline6 libreadline6-dev
 RUN apt-get -y --force-yes --no-install-recommends install openjdk-7-jdk
 
 # Install add-on packages

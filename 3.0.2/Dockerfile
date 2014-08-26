@@ -3,23 +3,8 @@ MAINTAINER Chad Barraford <chad@rstudio.com>
 
 ENV R_VERSION 3.0.2
 
-# Install R from source
-RUN \
-    cd /tmp && \
-    wget http://cran.rstudio.com/src/base/R-3/R-$R_VERSION.tar.gz && \
-    tar -zxvf R-$R_VERSION.tar.gz && \
-    cd R-$R_VERSION && \
-    ./configure --with-x=no --prefix=/opt/R$R_VERSION/ --enable-R-shlib && \
-    make && \
-    make check && \
-    make install
+# Install R
+RUN apt-get -y --force-yes install r-base-core=3.0.2-1precise0 r-base-dev=3.0.2-1precise0
 
 # set UTF-8
-RUN echo "LANG=C.UTF-8" >> /opt/R$R_VERSION/lib/R/etc/Renviron.site
-
-# Setup links
-RUN ln -s /opt/R$R_VERSION/bin/R /usr/bin/R
-RUN ln -s /opt/R$R_VERSION/bin/Rscript /usr/bin/Rscript
-
-## Cleanup source files
-RUN rm -rf /tmp/R-$R_VERSION.tar.gz /tmp/R-$R_VERSION
+RUN echo "LANG=C.UTF-8" >> /usr/lib/R/etc/Renviron.site
