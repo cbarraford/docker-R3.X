@@ -18,5 +18,16 @@ RUN apt-get -y --force-yes --no-install-recommends install openjdk-7-jdk
 # Install add-on packages
 RUN apt-get -y --force-yes install sudo lsb-release curl wget libatlas3gf-base texinfo texlive texlive-fonts-extra texlive-latex-extra biblatex texlive-bibtex-extra texlive-xetex libxml2-dev protobuf-compiler libprotoc-dev libmysqlclient15-dev unixodbc unixodbc-dev libmyodbc odbc-postgresql tdsodbc libgraphviz-dev libproj-dev libfftw3-dev libnetcdf-dev libproc-dev libgdal1-dev libcairo2 libcairo2-dev libxt6 libxt-dev jags
 
+# install RQuantLib
+RUN \
+    cd /tmp && \
+    curl -O http://softlayer-dal.dl.sourceforge.net/project/quantlib/QuantLib/1.4/QuantLib-1.4.tar.gz && \
+    tar -zxvf QuantLib-1.4.tar.gz && \
+    cd QuantLib-1.4 && \
+    ./configure && \
+    make && \
+    make install && \
+    rm -rf /tmp/QuantLib-1.4 /tmp/QuantLib-1.4.tar.gz
+
 # Set default locale
 RUN update-locale --reset LANG=C.UTF-8
